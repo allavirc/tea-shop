@@ -1,0 +1,167 @@
+{% extends 'server/base.html' %}
+{% block title %}Home Page{% endblock %}
+{% block content  %}
+
+<style>
+    #img1{
+        background-image: url(
+            https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/321243_2200-800x1200.jpg
+        );
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #img2{
+        background-image: url(
+            https://www.healthifyme.com/blog/wp-content/uploads/2022/03/Tea-Types-1.jpg
+        );
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #img3{
+        background-image: url(
+            https://images.squarespace-cdn.com/content/v1/582c8b7237c581c2a8b25553/1574710724346-EWH3N68V6GW4CO2Z8KZZ/Website_Tea_Main+Page_5.jpg
+        );
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #text,text2,text3{
+        color: wight;
+    }
+    #bg{
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 30px;
+    }
+    #bg2{
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+    }
+    #bg3{
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+    }
+
+    h2{
+      font-family: 'Papyrus', serif;
+    }
+    .h2{
+      color: #628c2c;
+      font-size: 150%;
+      margin-top: 20px;
+      margin-left: 110px;
+      margin-bottom: 10px;
+      font-weight: 500;
+      box-sizing: border-box;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      swiper-navigation-size: 44px;
+    }
+
+    p {
+    display: block;
+    width: 80%;
+    margin: 0px 50px 50px;
+    margin-left: 110px;
+    font-family: 'PT Sans',sans-serif;
+    }
+
+</style>
+
+<h1>Home Page!</h1>
+<div class="container px-4 py-5" id="custom-cards">
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden bg-dark rounded-4 shadow-lg" id="img1">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;" id="text">
+                  <div id="bg">
+                    №1 tea expert in the country
+                  </div>
+                </font></font></h2>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Земля</font></font></small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3д</font></font></small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" id="img2">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;" id="text2">
+                <div id="bg2">
+                  Unique taste that you can purchase on this site
+                </div>
+            </font></font></h2>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Пакистан</font></font></small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4д</font></font></small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-4 shadow-lg" id="img3">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" id="text3">
+               <div id="bg3">
+                  The fastest delivery anywhere in the country!
+               </div>
+
+            </font></font></h2>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Калифорния</font></font></small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5д</font></font></small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<h2 class="h2"><b>About the producer</b></h2>
+<p>
+  Refreshing, invigorating, robust or soothing, our love of tea permeates everything we do:
+  from blending in our own factory in Sri Lanka, all the way to your freshly brewed cup. But
+  tea is much more than that. We care about everyone in our supply chain. From pickers, packers,
+  mixers to drinkers. Small plantations, organic, fair trade and sustainable are words that fit
+  the organization. Not only for the impact they have on the company, but also for generations to come.
+</p>
+<h2 class="h2"><b>The flavors of English Tea Shop</b></h2>
+<p>
+  Do you like fruity or fresh? Or do you prefer something to cheer you up or relax? Taste the classics
+  (such as the English breakfast tea which is one of the best tea brands in the world). Or let yourself
+  be cheered up by the Chocolate Super Berry Burst. The wide range of cheerful teas offers something for
+  everyone. The tea comes to you with love from Sri Lanka. Tea. Lovingly. Concern.
+</p>
+
+
+{% endblock %}

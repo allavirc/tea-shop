@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/styleprod.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>{{ product.title }}</title>
+</head>
+<style>
+    .body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a{
+        margin: 20px;
+    }
+
+    #tit{
+        margin: 50px;
+        margin-left: 600px;
+    }
+    img{
+        height: 300px;
+        width: 450px;
+    }
+</style>
+
+<body>
+
+    <div class="=body">
+        <div>
+            <h2><div id="tit">Tea Catalog</div></h2>
+            <a href="server/blacktea.html"> <img src="{{ product1.image.url }}" alt="" width="400"> </a>
+            <a href="server/greentea.html"> <img src="{{ product2.image.url }}" alt="" width="400"> </a>
+            <a href="server/redtea.html"> <img src="{{ product3.image.url }}" alt="" width="400"> </a>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+{% extends 'server/base.html' %}
+{% block title %}Sing up{% endblock %}
+{% block content %}
+<style>
+    #center{
+            display: flex;
+            justify-content: center;
+       }
+        form{
+            width: 80%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            margin-top: 30px;
+        }
+        p{
+            display: flex;
+            justify-content: space-between;
+        }
+        #p{
+            display: flex;
+            justify-content: center;
+        }
+
+</style>
+
+<div id="center">
+<form class="form-control" action="{% url 'register' %}" method="post" enctype="multipart/form-data">
+    <div class="form-floating">
+        {% csrf_token %}
+        {{ form.as_p }}
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Register
+    </button>
+</form>
+</div>
+
+<p id="p">Don't have an account yet? Login
+        <a href="/login">Here</a>!
+</p>
+{% endblock %}

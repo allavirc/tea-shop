@@ -1,0 +1,10 @@
+{% extends 'server/base.html' %}
+{% block title %}Login{% endblock %}
+{% block content %}
+
+<p>
+    Вы успешно авторизованы! Важные новости будут отправлены на вашу почту:
+    {{ request.user.email }}
+</p>
+
+{% endblock %}

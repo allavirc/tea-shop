@@ -1,0 +1,43 @@
+{% extends 'server/base.html' %}
+{% block title %}Login{% endblock %}
+{% block content %}
+
+<style>
+    #center{
+            display: flex;
+            justify-content: center;
+       }
+        form{
+            width: 85%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            margin-top: 100px;
+            margin: 100px;
+        }
+        p{
+            display: flex;
+            padding: 5px;
+            justify-content: space-between;
+        }
+        #p{
+            display: flex;
+            justify-content: center;
+        }
+</style>
+
+    <form action="{% url 'form_data' %}" method="post">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">Send</button>
+    </form>
+
+<p id="p">Don't have an account yet? So sign up
+    <a href="/sing-up">Here</a>!
+</p>
+
+{% endblock %}

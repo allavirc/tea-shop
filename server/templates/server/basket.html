@@ -1,0 +1,12 @@
+{% extends 'server/base.html' %}
+{% block title %}Basket{{ count }}{% endblock %}
+{% block content %}
+
+    <h1>BASKET!</h1>
+    <br><br><br>
+    {% for item in basket_items %}
+        <a href="{{ item.id }}">{{ item.product }} : x{{ item.quantity }}</a><br>
+    {% endfor %}
+
+
+{% endblock %}

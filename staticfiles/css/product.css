@@ -1,0 +1,81 @@
+header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.im1{
+    width: 200px;
+    height: 200px;
+}
+
+
+.card-body{
+    width: 300px;
+    height: auto;
+}
+
+#q1{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: wight;
+    border-radius: 3px;
+}
+#q2{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: wight;
+    border-radius: 3px;
+}
+#q3{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: wight;
+    border-radius: 3px;
+}
+#q4{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: wight;
+    border-radius: 3px;
+}
+#q5{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: wight;
+    border-radius: 3px;
+}
+#q6{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: wight;
+    border-radius: 3px;
+}
+#q1:hover{
+    background-color: grey;
+}
+#q2:hover{
+    background-color: grey;
+}
+#q3:hover{
+    background-color: grey;
+}
+#q4:hover{
+    background-color: grey;
+}
+#q5:hover{
+    background-color: grey;
+}
+#q6:hover{
+    background-color: grey;
+}
+
+.red{
+    color: red;
+}
+
+
+
+
+

@@ -1,0 +1,23 @@
+{% extends 'server/base.html' %}
+{% block title %}Catalog{% endblock %}
+{% block content %}
+<style>
+    #d1{
+        display: flex;
+        order: 5;
+        justify-content: center;
+        margin-top: 200px;
+    }
+</style>
+
+<div id="d1">
+    <form action="/add_product_to_basket/" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+
+{% endblock %}

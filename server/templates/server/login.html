@@ -1,0 +1,49 @@
+{% extends 'server/base.html' %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<style>
+    #center{
+            display: flex;
+            justify-content: center;
+       }
+        form{
+            width: 80%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            margin-top: 30px;
+        }
+        p{
+            display: flex;
+            padding: 5px;
+            justify-content: space-between;
+        }
+        #p{
+            display: flex;
+            justify-content: center;
+        }
+</style>
+
+<div id="center">
+<form method="post" class="form-control">
+    <div class="form-floating">
+        {% csrf_token %}
+        {{ form.as_p }}
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Login
+    </button>
+
+    {% if a != None %}
+        <p id="p1"> {{ a }}</p>
+    {% endif %}
+</form>
+</div>
+
+<p id="p">Don't have an account yet? So sign up
+    <a href="/sing-up">Here</a>!
+</p>
+{% endblock %}
